@@ -13,12 +13,18 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
     background: black;
+  }
+} */
+
+@layer components {
+  .btn-primary {
+    @apply border-0 p-2 px-6 bg-slate-100 rounded-md;
   }
 }
